@@ -2,9 +2,9 @@
 
 ## 1. Project Description
 
-Phase 3 adds a basic friend recommendation program for TrojanBook. It is in Python and uses a small database made for the project. The idea is that if two people have similar profile information, they might be good people to recommend as friends.
+Phase 3 adds a basic friend recommendation program for TrojanBook. It is in Python and uses a small csv database. The idea is that if two people have similar profile information, they might be good people to recommend as friends.
 
-This is not connected directly to the C++ code, but it is based on the same TrojanBook idea from phase 1 and phase 2.
+The Python code is separate from the C++ files, but it uses the same TrojanBook idea from phase 1 and phase 2.
 
 ## 2. How This Extends Phase 1 and Phase 2
 
@@ -12,11 +12,11 @@ In phase 1, the project had `Person` objects and a `Network` class. The people h
 
 In phase 2, the project added friends. Each person had `myfriends`, which was a `vector<Person*>`. When two people became friends, both sides got updated. Phase 2 also used `codeName`, made from first name plus last name, with spaces removed and lowercase.
 
-This part uses the same idea but in csv files. `users.csv` has `code_name`, and `friendships.csv` stores which users are already friends. Current friends are treated as positive examples, and users who are not friends are treated as negative examples.
+This part uses the same idea but in csv files. `users.csv` has `code_name` using the same Phase 2 rule, and `friendships.csv` stores which users are already friends. Friend pairs are labeled as `1`, and non-friend pairs are labeled as `0`.
 
 ## 3. Database Description
 
-The database is made up for this phase, which was allowed for the assignment.
+The database is made up for this phase.
 
 The old information from the other phases is still included:
 
@@ -108,9 +108,9 @@ The program also prints 3 recommendations for Peter Parker and Miles Morales.
 
 ## 8. Limitations
 
-The data set is pretty small, so the scores should not be taken too seriously. It is mainly to show the idea of a content based recommendation system.
+The data set is small, so the scores are just for this project.
 
-Also, this only uses profile similarity. It does not use things like number of mutual friends or a bigger social graph.
+This only uses profile similarity. It does not use mutual friends or a bigger social graph.
 
 ## 9. Future Improvements
 

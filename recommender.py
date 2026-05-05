@@ -60,7 +60,6 @@ def interest_set(interests):
 
 
 def process_users(users):
-    # Extra processed columns for the ML features.
     users["age"] = users["birthdate"].apply(get_age)
     users["email_domain"] = users["email"].apply(email_domain)
     users["area_code"] = users["phone"].apply(area_code)
@@ -69,7 +68,6 @@ def process_users(users):
 
 
 def friend_key(id1, id2):
-    # This makes friendships double sided like Phase 2 myfriends.
     return tuple(sorted((int(id1), int(id2))))
 
 
@@ -159,7 +157,7 @@ def reasons_for(user, candidate):
         reasons.append("shared interests: " + ", ".join(shared))
 
     if len(reasons) == 0:
-        reasons.append("closest match from the model")
+        reasons.append("similar profile score")
 
     return ", ".join(reasons)
 

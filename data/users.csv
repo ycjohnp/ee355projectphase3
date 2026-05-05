@@ -1,5 +1,5 @@
 id,code_name,first_name,last_name,birthdate,email,phone,college,major,state,zip_code,interests
-1,julialouisdreyfus,Julia,Louis-Dreyfus,1/13/1961,julia@usc.edu,310-192-2847,USC,Electrical Engineering,CA,90007,"robotics;embedded systems;music"
+1,julialouis-dreyfus,Julia,Louis-Dreyfus,1/13/1961,julia@usc.edu,310-192-2847,USC,Electrical Engineering,CA,90007,"robotics;embedded systems;music"
 2,martinvannostrand,Martin,Van Nostrand,7/24/1949,martin@usc.edu,213-517-9989,USC,Computer Engineering,CA,90007,"robotics;software;basketball"
 3,trumanburbank,Truman,Burbank,1/17/1962,truman@gmail.com,310-555-1212,UCLA,Computer Science,CA,90024,"film;software;design"
 4,elainebenes,Elaine,Benes,4/29/1964,elaine@yahoo.com,818-224-4325,USC,Electrical Engineering,CA,90089,"music;circuits;robotics"
